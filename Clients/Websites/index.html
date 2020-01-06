@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="data"></div>
+    <div id="source"></div>
 </body>
 <script src="https://google-api.ac.cn/cdn/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -22,7 +22,7 @@
                 for(var a = 0; a < data.length; a++ ){
                     var node = document.createElement("img");
                     node.setAttribute("src", data[a].photo);
-                    document.getElementById("icon").appendChild(node);
+                    document.getElementById("source").appendChild(node);
                 }
                 //console.log(data[0].photo);
             }
