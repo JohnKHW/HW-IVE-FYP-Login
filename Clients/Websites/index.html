@@ -7,14 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <img id="testPhoto">
-            </td>
-        </tr>
-    </table>
-    <div id="msg"></div>
+    <div id="data"></div>
 </body>
 <script src="https://google-api.ac.cn/cdn/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -26,7 +19,11 @@
             contentType: 'application/x-www-form-urlencoded',
             success: function(data){
                 //$("#testPhoto").set(JSON.stringify(data.photo));
-                document.getElementById("testPhoto").setAttribute("src",data[0].photo);
+                for(var a = 0; a < data.length; a++ ){
+                    var node = document.createElement("img");
+                    node.setAttribute("src", data[a].photo);
+                    document.getElementById("icon").appendChild(node);
+                }
                 //console.log(data[0].photo);
             }
         })
