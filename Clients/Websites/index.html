@@ -29,33 +29,5 @@
     </table>
     <div id="msg"></div>
 </body>
-<script src="https://google-api.ac.cn/cdn/jquery/3.3.1/jquery.min.js"></script>
-<script>
-    window.onload = onload();
-    function onload(){
-        /*
-        let playerId =$("#playerId").val().trim();
-        let playerPw =$("#playerPw").val().trim();
-        let playerName =$("#playerName").val().trim();
-        let playerEmail =$("#playerEmail").val().trim();
-        let loginReqbody={
-            'playerId': playerId,
-            'playerPw': playerPw,
-            'playerName': playerName,
-            'playerEmail': playerEmail
-        }
-        */
-        console.log("register");
-        $.ajax({
-            type: "GET",
-            url: "https://script.google.com/macros/s/AKfycbyg5cwTItjitSqKWKAIxbORA3JUcSMkJKp4eSnl-k-X7dvqew/exec",
-            contentType: 'application/x-www-form-urlencoded',
-            success: function(data){
-                //$("#testPhoto").set(JSON.stringify(data.photo));
-                document.getElementById("testPhoto").setAttribute("src",data[0].photo);
-                //console.log(data[0].photo);
-            }
-        })
-    }
-</script>
+
 </html>
