@@ -9,21 +9,8 @@
 <body>
     <table>
         <tr>
-            <td>Player Account</td>
-            <td><input name="playerId" type="text" id="playerId"></td>
-        </tr>
-        <tr>
-            <td>Player Password</td>
-            <td><input name="playerPw" type="password" id="playerPw"></td>
-        </tr>
-        <tr>
             <td>
                 <img id="testPhoto">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <button onclick="register()">Register</button>
             </td>
         </tr>
     </table>
@@ -33,19 +20,6 @@
 <script>
     window.onload = onload();
     function onload(){
-        /*
-        let playerId =$("#playerId").val().trim();
-        let playerPw =$("#playerPw").val().trim();
-        let playerName =$("#playerName").val().trim();
-        let playerEmail =$("#playerEmail").val().trim();
-        let loginReqbody={
-            'playerId': playerId,
-            'playerPw': playerPw,
-            'playerName': playerName,
-            'playerEmail': playerEmail
-        }
-        */
-        console.log("register");
         $.ajax({
             type: "GET",
             url: "https://script.google.com/macros/s/AKfycbyg5cwTItjitSqKWKAIxbORA3JUcSMkJKp4eSnl-k-X7dvqew/exec",
